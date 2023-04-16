@@ -1,0 +1,650 @@
+-- Logs begin at Tue 2023-02-28 15:25:39 CST, end at Tue 2023-02-28 19:33:41 CST. --
+Feb 28 19:30:45 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:30:45 server1.assistantrade.com systemd[3907230]: tbot.service: Failed to determine user credentials: No such process
+Feb 28 19:30:45 server1.assistantrade.com systemd[3907230]: tbot.service: Failed at step USER spawning /usr/bin/python3.9: No such process
+Feb 28 19:30:45 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=217/USER
+Feb 28 19:30:45 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:30:55 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 1.
+Feb 28 19:30:55 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:30:55 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:30:55 server1.assistantrade.com systemd[3907271]: tbot.service: Failed to determine user credentials: No such process
+Feb 28 19:30:55 server1.assistantrade.com systemd[3907271]: tbot.service: Failed at step USER spawning /usr/bin/python3.9: No such process
+Feb 28 19:30:55 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=217/USER
+Feb 28 19:30:55 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:31:06 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 2.
+Feb 28 19:31:06 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:31:06 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:31:06 server1.assistantrade.com systemd[3907319]: tbot.service: Failed to determine user credentials: No such process
+Feb 28 19:31:06 server1.assistantrade.com systemd[3907319]: tbot.service: Failed at step USER spawning /usr/bin/python3.9: No such process
+Feb 28 19:31:06 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=217/USER
+Feb 28 19:31:06 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:31:16 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 3.
+Feb 28 19:31:16 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:31:16 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]: Traceback (most recent call last):
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from service import Service
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from config import *
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from exchanges import Binance
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from .binance import Binance
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     import websocket
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]: Error in sys.excepthook:
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]: Traceback (most recent call last):
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from apport.report import Report
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     import apport.fileutils
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     import apt
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     import apt_pkg
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]: Original exception was:
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]: Traceback (most recent call last):
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from service import Service
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from config import *
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from exchanges import Binance
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     from .binance import Binance
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]:     import websocket
+Feb 28 19:31:17 server1.assistantrade.com python3.9[3907383]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:17 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:31:17 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:31:28 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 4.
+Feb 28 19:31:28 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:31:28 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]: Traceback (most recent call last):
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from service import Service
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from config import *
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from exchanges import Binance
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from .binance import Binance
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     import websocket
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]: Error in sys.excepthook:
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]: Traceback (most recent call last):
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from apport.report import Report
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     import apport.fileutils
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     import apt
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     import apt_pkg
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]: Original exception was:
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]: Traceback (most recent call last):
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from service import Service
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from config import *
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from exchanges import Binance
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     from .binance import Binance
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]:     import websocket
+Feb 28 19:31:28 server1.assistantrade.com python3.9[3907461]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:28 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:31:28 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:31:38 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 5.
+Feb 28 19:31:38 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:31:38 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]: Traceback (most recent call last):
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from service import Service
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from config import *
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from exchanges import Binance
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from .binance import Binance
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     import websocket
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]: Error in sys.excepthook:
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]: Traceback (most recent call last):
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from apport.report import Report
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     import apport.fileutils
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     import apt
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     import apt_pkg
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]: Original exception was:
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]: Traceback (most recent call last):
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from service import Service
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from config import *
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from exchanges import Binance
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     from .binance import Binance
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]:     import websocket
+Feb 28 19:31:38 server1.assistantrade.com python3.9[3907531]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:38 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:31:38 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:31:49 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 6.
+Feb 28 19:31:49 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:31:49 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]: Traceback (most recent call last):
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from service import Service
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from config import *
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from exchanges import Binance
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from .binance import Binance
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     import websocket
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]: Error in sys.excepthook:
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]: Traceback (most recent call last):
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from apport.report import Report
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     import apport.fileutils
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     import apt
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     import apt_pkg
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]: Original exception was:
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]: Traceback (most recent call last):
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from service import Service
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from config import *
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from exchanges import Binance
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     from .binance import Binance
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]:     import websocket
+Feb 28 19:31:49 server1.assistantrade.com python3.9[3907581]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:49 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:31:49 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:31:59 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 7.
+Feb 28 19:31:59 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:31:59 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]: Traceback (most recent call last):
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from service import Service
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from config import *
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from exchanges import Binance
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from .binance import Binance
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     import websocket
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]: Error in sys.excepthook:
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]: Traceback (most recent call last):
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from apport.report import Report
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     import apport.fileutils
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     import apt
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     import apt_pkg
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]: Original exception was:
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]: Traceback (most recent call last):
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from service import Service
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from config import *
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from exchanges import Binance
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     from .binance import Binance
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]:     import websocket
+Feb 28 19:31:59 server1.assistantrade.com python3.9[3907636]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:31:59 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:31:59 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:32:09 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 8.
+Feb 28 19:32:09 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:32:09 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]: Traceback (most recent call last):
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from service import Service
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from config import *
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from exchanges import Binance
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from .binance import Binance
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     import websocket
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]: Error in sys.excepthook:
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]: Traceback (most recent call last):
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from apport.report import Report
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     import apport.fileutils
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     import apt
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     import apt_pkg
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]: Original exception was:
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]: Traceback (most recent call last):
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from service import Service
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from config import *
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from exchanges import Binance
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     from .binance import Binance
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]:     import websocket
+Feb 28 19:32:10 server1.assistantrade.com python3.9[3907690]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:10 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:32:10 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:32:20 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 9.
+Feb 28 19:32:20 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:32:20 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]: Traceback (most recent call last):
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from service import Service
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from config import *
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from exchanges import Binance
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from .binance import Binance
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     import websocket
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]: Error in sys.excepthook:
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]: Traceback (most recent call last):
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from apport.report import Report
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     import apport.fileutils
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     import apt
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     import apt_pkg
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]: Original exception was:
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]: Traceback (most recent call last):
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from service import Service
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from config import *
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from exchanges import Binance
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     from .binance import Binance
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]:     import websocket
+Feb 28 19:32:20 server1.assistantrade.com python3.9[3907752]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:20 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:32:20 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:32:30 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 10.
+Feb 28 19:32:30 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:32:30 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]: Traceback (most recent call last):
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from service import Service
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from config import *
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from exchanges import Binance
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from .binance import Binance
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     import websocket
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]: Error in sys.excepthook:
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]: Traceback (most recent call last):
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from apport.report import Report
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     import apport.fileutils
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     import apt
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     import apt_pkg
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]: Original exception was:
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]: Traceback (most recent call last):
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from service import Service
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from config import *
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from exchanges import Binance
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     from .binance import Binance
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]:     import websocket
+Feb 28 19:32:30 server1.assistantrade.com python3.9[3907806]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:30 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:32:30 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:32:41 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 11.
+Feb 28 19:32:41 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:32:41 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]: Traceback (most recent call last):
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from service import Service
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from config import *
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from exchanges import Binance
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from .binance import Binance
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     import websocket
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]: Error in sys.excepthook:
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]: Traceback (most recent call last):
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from apport.report import Report
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     import apport.fileutils
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     import apt
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     import apt_pkg
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]: Original exception was:
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]: Traceback (most recent call last):
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from service import Service
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from config import *
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from exchanges import Binance
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     from .binance import Binance
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]:     import websocket
+Feb 28 19:32:41 server1.assistantrade.com python3.9[3907857]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:41 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:32:41 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:32:51 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 12.
+Feb 28 19:32:51 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:32:51 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]: Traceback (most recent call last):
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from service import Service
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from config import *
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from exchanges import Binance
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from .binance import Binance
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     import websocket
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]: Error in sys.excepthook:
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]: Traceback (most recent call last):
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from apport.report import Report
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     import apport.fileutils
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     import apt
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     import apt_pkg
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]: Original exception was:
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]: Traceback (most recent call last):
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from service import Service
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from config import *
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from exchanges import Binance
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     from .binance import Binance
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]:     import websocket
+Feb 28 19:32:51 server1.assistantrade.com python3.9[3907916]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:32:51 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:32:51 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:33:02 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 13.
+Feb 28 19:33:02 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:33:02 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]: Traceback (most recent call last):
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from service import Service
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from config import *
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from exchanges import Binance
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from .binance import Binance
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     import websocket
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]: Error in sys.excepthook:
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]: Traceback (most recent call last):
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from apport.report import Report
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     import apport.fileutils
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     import apt
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     import apt_pkg
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]: Original exception was:
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]: Traceback (most recent call last):
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from service import Service
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from config import *
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from exchanges import Binance
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     from .binance import Binance
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]:     import websocket
+Feb 28 19:33:02 server1.assistantrade.com python3.9[3907971]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:33:02 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:33:02 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:33:12 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 14.
+Feb 28 19:33:12 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:33:12 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]: Traceback (most recent call last):
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from service import Service
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from config import *
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from exchanges import Binance
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from .binance import Binance
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     import websocket
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]: Error in sys.excepthook:
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]: Traceback (most recent call last):
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from apport.report import Report
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     import apport.fileutils
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     import apt
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     import apt_pkg
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]: Original exception was:
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]: Traceback (most recent call last):
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from service import Service
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from config import *
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from exchanges import Binance
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     from .binance import Binance
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]:     import websocket
+Feb 28 19:33:12 server1.assistantrade.com python3.9[3908023]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:33:12 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:33:12 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:33:23 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 15.
+Feb 28 19:33:23 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:33:23 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]: Traceback (most recent call last):
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from service import Service
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from config import *
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from exchanges import Binance
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from .binance import Binance
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     import websocket
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]: Error in sys.excepthook:
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]: Traceback (most recent call last):
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from apport.report import Report
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     import apport.fileutils
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     import apt
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     import apt_pkg
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]: Original exception was:
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]: Traceback (most recent call last):
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from service import Service
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from config import *
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from exchanges import Binance
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     from .binance import Binance
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]:     import websocket
+Feb 28 19:33:23 server1.assistantrade.com python3.9[3908080]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:33:23 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:33:23 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
+Feb 28 19:33:33 server1.assistantrade.com systemd[1]: tbot.service: Scheduled restart job, restart counter is at 16.
+Feb 28 19:33:33 server1.assistantrade.com systemd[1]: Stopped TBot.
+Feb 28 19:33:33 server1.assistantrade.com systemd[1]: Started TBot.
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]: Traceback (most recent call last):
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from service import Service
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from config import *
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from exchanges import Binance
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from .binance import Binance
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     import websocket
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]: Error in sys.excepthook:
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]: Traceback (most recent call last):
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from apport.fileutils import likely_packaged, get_recent_crashes
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from apport.report import Report
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     import apport.fileutils
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from apport.packaging_impl import impl as packaging
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 23, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     import apt
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     import apt_pkg
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]: ModuleNotFoundError: No module named 'apt_pkg'
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]: Original exception was:
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]: Traceback (most recent call last):
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/main.py", line 4, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from service import Service
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/service.py", line 2, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from config import *
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/config.py", line 2, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from exchanges import Binance
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/exchanges/__init__.py", line 1, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     from .binance import Binance
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:   File "/root/tbot/exchanges/binance.py", line 7, in <module>
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]:     import websocket
+Feb 28 19:33:33 server1.assistantrade.com python3.9[3908131]: ModuleNotFoundError: No module named 'websocket'
+Feb 28 19:33:33 server1.assistantrade.com systemd[1]: tbot.service: Main process exited, code=exited, status=1/FAILURE
+Feb 28 19:33:33 server1.assistantrade.com systemd[1]: tbot.service: Failed with result 'exit-code'.
